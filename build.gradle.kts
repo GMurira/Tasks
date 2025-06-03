@@ -15,7 +15,10 @@ repositories {
     mavenCentral()
 }
 
+val ktor_version = 3.1
+
 dependencies {
+    implementation("io.ktor:ktor-server-status-pages:${ktor_version}")
     implementation(libs.ktor.server.core)
     implementation(libs.ktor.server.content.negotiation)
     implementation(libs.ktor.server.netty)
